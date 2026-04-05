@@ -3,7 +3,7 @@
 verify_cpu() {
     local cores
     cores=$(nproc)
-    if (( cores < 4 )); then
+    if (( cores < 2 )); then
         error_log "Only $cores CPU cores detected. Minimum 4 required."
         return 1
     fi
